@@ -1,0 +1,27 @@
+.main-background{
+    height:842px;
+    width:1492px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+}
+span{
+    font-weight: 100;
+    font-size: 50px;
+    margin: 0px 13px 0px 0px;
+}
+
+span:nth-child(odd){
+    margin-top: 0px;
+}
+span:nth-child(even){
+    margin-top: 20px;
+}
+
+.game-section{
+    height:600px;
+    width:1200px;
+    border:1px solid #fff;
+    position: absolute;
+    top: 250px;
+}
