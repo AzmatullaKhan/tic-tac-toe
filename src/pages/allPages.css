@@ -9,6 +9,7 @@ span{
     font-weight: 100;
     font-size: 50px;
     margin: 0px 13px 0px 0px;
+    text-decoration: underline;
 }
 
 span:nth-child(odd){
@@ -16,6 +17,23 @@ span:nth-child(odd){
 }
 span:nth-child(even){
     margin-top: 20px;
+}
+button{
+    margin: 30px 0px 0px 0px;
+    height:40px;
+    width:120px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .game-section{
@@ -32,7 +50,7 @@ span:nth-child(even){
     height:400px;
     width:500px;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     padding: 0px 20px;
     justify-content: center;
     align-items: center;
@@ -42,13 +60,29 @@ span:nth-child(even){
 .game-turns span{
     font-size: 20px;
 }
-.game-space{
+.game-space-fake{
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../images/tic-tac-toe.png');
     height:400px;
     width:437px;
     padding: 20px 15px;
+}
+.game-space-real{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/tic-tac-toe.png');
+    height:400px;
+    width:437px;
+    padding: 20px 15px;
+    animation: game_space_real_animation 1s ease-in-out 0s;
+}
+@keyframes game_space_real_animation {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.hidden{
+    display: none;
 }
 
 .each-img{
