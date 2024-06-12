@@ -59,6 +59,11 @@ export const Main=()=>{
 
         if(player1Click && !playArea[row_index-1][col_index-1]){
             document.getElementById(e.target.id).src=require('../images/x.png')
+            document.getElementById(e.target.id).style.animationName='each-img-animation'
+            document.getElementById(e.target.id).style.animationDuration='0.2s';
+            document.getElementById(e.target.id).style.animationDelay='0s'
+            document.getElementById(e.target.id).style.animationTimingFunction='ease-in'
+
             player1Click=false
             player2Click=true
             firstClick=true
@@ -71,6 +76,10 @@ export const Main=()=>{
             player2Click=false
             document.getElementById('span-2').innerText="Player 1's Turn"
             playArea[row_index-1][col_index-1]='Player2'
+            document.getElementById(e.target.id).style.animationName='each-img-animation'
+            document.getElementById(e.target.id).style.animationDuration='0.2s';
+            document.getElementById(e.target.id).style.animationDelay='0s'
+            document.getElementById(e.target.id).style.animationTimingFunction='ease-in'
         }
 
         if(firstClick){
@@ -132,12 +141,13 @@ export const Main=()=>{
                     <img src={require('../images/b.png')} className='each-img' id='threeTwo32' onClick={handleXOClick} alt='b-img'/>
                     <img src={require('../images/b.png')} className='each-img' id='threeThree33' onClick={handleXOClick} alt='b-img'/>
                 </div>
+
+                <footer>
+                    <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+                </footer>
             </div>
         
         </div>
     )
 }
 
-
-
-// 145*140

@@ -63,7 +63,7 @@ button:hover{
 .game-space-fake{
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../images/tic-tac-toe.png');
+    background-image: url('../images/tic-tac-toe-fake.png');
     height:400px;
     width:437px;
     padding: 20px 15px;
@@ -90,4 +90,15 @@ button:hover{
     width: 100px;
     margin-right: 35px;
     margin-bottom: 27px;
+}
+
+@keyframes each-img-animation {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+footer{
+    position: absolute;
+    top:543px;
+    font-size: 18px;
 }
